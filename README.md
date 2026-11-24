@@ -94,12 +94,60 @@ Model performance was evaluated using:
 
 • ROC-AUC Score
 
+## Model Performance
+The three classification models were evaluated using Accuracy and ROC-AUC scores.
+|  Model |      Accuracy    |  ROC-AUC |
+| :---:         |     :---:      |   :---:    |
+| Logistic Regression   | 84.67%      |90.77%    |
+|Decision Tree       | 84.52%        |89.97%      |
+|Random Forest      |    86.87%  |  92.03%    |
+
+
+
+### Best Performing Model
+Random Forest achieved the highest performance, with an accuracy of **86.87%** and an ROC-AUC score of **92.03%.**
+
+Based on these evaluation metrics, Random Forest performed best among the three models tested.
+
+## Feature Importance
+The Random Forest model was used to identify the features that contributed most to its predictions.
+
+The top 10 important features were:
+| Feature | Importance |
+| --- | --- |
+| Tenure in Months |0.111763 |
+| Contract (Month-to-Month) |  0.093715 |
+| Total Charges |  0.082708 |
+| Total Revenue |   0.080702 |
+| Number of Referrals |  0.056621 |
+| Monthly Charge |  0.053562 |
+| Age | 0.049742 |
+|Total Long Distance Charges|  0.047610 |
+|Average Monthly Long Distance Charges|  0.037219 |
+|Average Monthly GB Download| 0.033423 |
+
+ 
+### Key Observation
+
+Tenure in Months was the most important feature in the Random Forest model, suggesting that the length of time a customer has stayed with the company is an important factor 
+in predicting churn.
+
+The results also highlight the importance of contract type and customer spending patterns.
+
 ## Project File
 • customer-churn-prediction.ipynb – Jupyter notebook containing the project workflow, data analysis, preprocessing, model training and evaluation.
 
 ## Conclusion
-This project provided practical experience in preparing real-world customer data, performing data analysis and applying machine learning classification techniques to a customer churn prediction problem.
-It also strengthened my understanding of the machine learning workflow, from data preparation to model evaluation.
+
+This project explored customer churn prediction in the telecommunications industry using machine learning techniques.
+
+Three classification models were developed and evaluated: Logistic Regression, Decision Tree, and Random Forest.
+
+The Random Forest model achieved the best performance, with an accuracy of **86.87%** and a ROC-AUC score of **92.03%.**
+
+The feature importance analysis identified customer tenure, contract type, and spending patterns among the most influential features used by the model.
+
+Overall, this project demonstrates how data analysis and machine learning can help telecommunications companies understand customer behaviour and identify customers who may be likely to leave.
 
 
 
