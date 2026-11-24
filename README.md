@@ -1,4 +1,6 @@
-# Telecom Customer Churn PredictionProject Overview
+# Telecom Customer Churn Prediction
+
+## Project Overview
 
 This project focuses on analysing and predicting customer churn in the telecommunications industry using Python and Machine Learning.
 
